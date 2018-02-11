@@ -30,5 +30,7 @@ Feel free to contribute or suggest additional syntax contexts.
 ## Other Resources
 
 [Inform 6 Designer's Manual](http://inform-fiction.org/manual/html/contents.html)
+
 [Sublime Text Syntax Definitions](http://www.sublimetext.com/docs/3/syntax.html)
+
 [Textmate scope naming conventions, used in syntax definitions](http://manual.macromates.com/en/language_grammars#naming_conventions.html)

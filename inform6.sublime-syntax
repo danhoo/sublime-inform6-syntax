@@ -1,0 +1,37 @@
+%YAML 1.2
+# A simple Sublime Text 3 syntax file for the Inform 6 (not 7) language
+# Contact: dsyu@hotmail.com
+
+---
+name: Inform6
+file_extensions: [inf, h]
+scope: source.inform6
+
+contexts:
+  main:
+    - match: \b(if|else|for|while|switch|do|until|break|continue|return|rfalse|rtrue)\b
+      scope: keyword.control.inform6
+    - match: \b(with|description|move|to|remove|number|each_turn|before|after|initial)\b
+      scope: keyword.other.inform6
+    - match: \b(Array|Attribute|Class|Constant|Extend|Global|Object|Property|Verb|Include|Switches|Release)\b
+      scope: keyword.other.inform6
+    - match: \b(has|hasnt|in|notin|ofclass|provides|or)\b
+      scope: keyword.operator.inform6
+    - match: '"'
+      push: string
+    - match: (!)[^\n\r]*[\n\r]
+      scope: comment.line.inform6
+    - match: \b[0-9]+\b
+      scope: constant.numeric.inform6
+    - match: \b(true|false)\b
+      scope: constant.language.inform6
+    - match: (?<=\[\s)[^;]+
+      scope: entity.name.function.inform6
+
+  string:
+    - meta_scope: string.quoted.double.inform6
+    - match: \\.
+      scope: constant.character.escape.inform6
+    - match: '"'
+      pop: true    
+

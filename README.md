@@ -3,9 +3,9 @@ Basic Sublime Text 3 syntax highlighting file for the Inform 6 language
 
 ## Requirements
 
-Sublime Text 3 or later. Note that this file's content would probably work with a ".tmLanguage" file for Sublime Text 2 and earlier, but I haven't verified this.
+Sublime Text 3 or later. Note that the content in inform6.sublime-syntax might work with a ".tmLanguage" file for Sublime Text 2 and earlier, but I haven't verified this.
 
-Inform 6 source files. Note that this syntax file will not work with Inform 7, as the grammar has changed significantly. My personal preference is Inform 6, so I wrote this to support my development work.
+Inform 6 source files. Note that inform6.sublime-syntax will not work with Inform 7, as the grammar has changed significantly. My personal preference is Inform 6, so I wrote this to support my development work.
 
 ## Install
 
@@ -19,7 +19,7 @@ Restart Sublime Text.
 
 ## Use
 
-"Inform6" should be available as a syntax option under View -> Syntax. Also, this syntax should be used by default when opening ".inf" files (unless you have another syntax plugin that already gets applied to .inf files).
+"Inform6" should be available as a syntax option under **View** -> **Syntax**. Also, this syntax should be used by default when opening ".inf" files (unless you have another syntax plugin that already gets applied to .inf files).
 
 ## Development Notes
 
